@@ -38,7 +38,8 @@ Inferences are performed through four models. The final output then can be used 
         python3 /opt/intel/openvino/deployment_tools/tools/model_downloader/downloader.py --name landmarks-regression-retail-0009 -o ../
         python3 /opt/intel/openvino/deployment_tools/tools/model_downloader/downloader.py --name gaze-estimation-adas-0002 -o ../
     
-
+Project Structure
+        <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/project_structure.png" />    
 ## Demo
 After successfully completing the setup and installation precedures. you are now good to run a demo. From the folder src in the root directory of the project, run the blow command.
     

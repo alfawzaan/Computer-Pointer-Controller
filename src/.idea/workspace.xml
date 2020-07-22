@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7d4998b-a1db-4afd-82d6-a94ab40b7a8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,6 +321,10 @@
     <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.723@0.23.1280.723" timestamp="1595247001387" />
     <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.724@0.23.1280.724" timestamp="1595376543573" />
     <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.728@0.23.1280.728" timestamp="1595429342812" />
+    <state x="338" y="23" width="586" height="715" key="find.popup" timestamp="1595454070454">
+      <screen x="0" y="23" width="1280" height="715" />
+    </state>
+    <state x="338" y="23" width="586" height="715" key="find.popup/0.23.1280.715@0.23.1280.715" timestamp="1595454070454" />
     <state x="296" y="68" width="670" height="676" key="search.everywhere.popup" timestamp="1595265618984">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
