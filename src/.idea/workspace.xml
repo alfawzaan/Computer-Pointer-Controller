@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7d4998b-a1db-4afd-82d6-a94ab40b7a8b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1es4ORBSQnlF4Y7s40MAqmS1KQC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="src" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="src" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="HDDL_INSTALL_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/external/hddl" />
+        <env name="HOME" value="$USER_HOME$" />
+        <env name="INTEL_CVSDK_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="InferenceEngine_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/share" />
+        <env name="OpenCV_DIR" value="/opt/intel//openvino_2020.3.194/opencv/cmake" />
+        <env name="PATH" value="/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/intel//openvino_2020.3.194/deployment_tools/model_optimizer:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$USER_HOME$/flutter/bin:$USER_HOME$/Library/Python/3.7/bin" />
+        <env name="ngraph_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/ngraph/cmake" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="HDDL_INSTALL_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/external/hddl" />
+        <env name="HOME" value="$USER_HOME$" />
+        <env name="INTEL_CVSDK_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="InferenceEngine_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/share" />
+        <env name="OpenCV_DIR" value="/opt/intel//openvino_2020.3.194/opencv/cmake" />
+        <env name="PATH" value="/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/intel//openvino_2020.3.194/deployment_tools/model_optimizer:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$USER_HOME$/flutter/bin:$USER_HOME$/Library/Python/3.7/bin" />
+        <env name="ngraph_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/ngraph/cmake" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <arguments>
+        <array />
+      </arguments>
+      <runOnlyEnvs>
+        <array />
+      </runOnlyEnvs>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="HDDL_INSTALL_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/external/hddl" />
+        <env name="HOME" value="$USER_HOME$" />
+        <env name="INTEL_CVSDK_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="InferenceEngine_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/share" />
+        <env name="OpenCV_DIR" value="/opt/intel//openvino_2020.3.194/opencv/cmake" />
+        <env name="PATH" value="/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/intel//openvino_2020.3.194/deployment_tools/model_optimizer:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$USER_HOME$/flutter/bin:$USER_HOME$/Library/Python/3.7/bin" />
+        <env name="ngraph_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/ngraph/cmake" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="rst2html" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="HDDL_INSTALL_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/external/hddl" />
+        <env name="HOME" value="$USER_HOME$" />
+        <env name="INTEL_CVSDK_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="InferenceEngine_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/share" />
+        <env name="OpenCV_DIR" value="/opt/intel//openvino_2020.3.194/opencv/cmake" />
+        <env name="PATH" value="/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/intel//openvino_2020.3.194/deployment_tools/model_optimizer:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$USER_HOME$/flutter/bin:$USER_HOME$/Library/Python/3.7/bin" />
+        <env name="ngraph_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/ngraph/cmake" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="html" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="HDDL_INSTALL_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/external/hddl" />
+        <env name="HOME" value="$USER_HOME$" />
+        <env name="INTEL_CVSDK_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="InferenceEngine_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/share" />
+        <env name="OpenCV_DIR" value="/opt/intel//openvino_2020.3.194/opencv/cmake" />
+        <env name="PATH" value="/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/intel//openvino_2020.3.194/deployment_tools/model_optimizer:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$USER_HOME$/flutter/bin:$USER_HOME$/Library/Python/3.7/bin" />
+        <env name="ngraph_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/ngraph/cmake" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="HDDL_INSTALL_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/external/hddl" />
+        <env name="HOME" value="$USER_HOME$" />
+        <env name="INTEL_CVSDK_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="InferenceEngine_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/share" />
+        <env name="OpenCV_DIR" value="/opt/intel//openvino_2020.3.194/opencv/cmake" />
+        <env name="PATH" value="/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/intel//openvino_2020.3.194/deployment_tools/model_optimizer:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$USER_HOME$/flutter/bin:$USER_HOME$/Library/Python/3.7/bin" />
+        <env name="ngraph_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/ngraph/cmake" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="HDDL_INSTALL_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/external/hddl" />
+        <env name="HOME" value="$USER_HOME$" />
+        <env name="INTEL_CVSDK_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="InferenceEngine_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/share" />
+        <env name="OpenCV_DIR" value="/opt/intel//openvino_2020.3.194/opencv/cmake" />
+        <env name="PATH" value="/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/intel//openvino_2020.3.194/deployment_tools/model_optimizer:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$USER_HOME$/flutter/bin:$USER_HOME$/Library/Python/3.7/bin" />
+        <env name="ngraph_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/ngraph/cmake" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="HDDL_INSTALL_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/external/hddl" />
+        <env name="HOME" value="$USER_HOME$" />
+        <env name="INTEL_CVSDK_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="InferenceEngine_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/share" />
+        <env name="OpenCV_DIR" value="/opt/intel//openvino_2020.3.194/opencv/cmake" />
+        <env name="PATH" value="/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/intel//openvino_2020.3.194/deployment_tools/model_optimizer:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$USER_HOME$/flutter/bin:$USER_HOME$/Library/Python/3.7/bin" />
+        <env name="ngraph_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/ngraph/cmake" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="HDDL_INSTALL_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/external/hddl" />
+        <env name="HOME" value="$USER_HOME$" />
+        <env name="INTEL_CVSDK_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel//openvino_2020.3.194" />
+        <env name="InferenceEngine_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/inference_engine/share" />
+        <env name="OpenCV_DIR" value="/opt/intel//openvino_2020.3.194/opencv/cmake" />
+        <env name="PATH" value="/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/intel//openvino_2020.3.194/deployment_tools/model_optimizer:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$USER_HOME$/flutter/bin:$USER_HOME$/Library/Python/3.7/bin" />
+        <env name="ngraph_DIR" value="/opt/intel//openvino_2020.3.194/deployment_tools/ngraph/cmake" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7d4998b-a1db-4afd-82d6-a94ab40b7a8b" name="Default Changelist" comment="" />
+      <created>1595096933536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595096933536</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="95" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595172656513">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="95" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.716@0.23.1280.716" timestamp="1595099840990" />
+    <state x="95" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.721@0.23.1280.721" timestamp="1595172656513" />
+    <state x="496" y="98" key="EnvironmentVariablesDialog" timestamp="1595147022948">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="496" y="98" key="EnvironmentVariablesDialog/0.23.1280.721@0.23.1280.721" timestamp="1595147022948" />
+    <state x="419" y="146" key="FileChooserDialogImpl" timestamp="1595238278310">
+      <screen x="0" y="23" width="1280" height="723" />
+    </state>
+    <state x="419" y="146" key="FileChooserDialogImpl/0.23.1280.723@0.23.1280.723" timestamp="1595238278310" />
+    <state x="140" y="23" width="982" height="723" key="SettingsEditor" timestamp="1595414286365">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="140" y="23" width="982" height="716" key="SettingsEditor/0.23.1280.716@0.23.1280.716" timestamp="1595173983550" />
+    <state x="140" y="23" width="982" height="721" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1595173607592" />
+    <state x="140" y="23" width="982" height="723" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1595240474517" />
+    <state x="140" y="23" key="SettingsEditor/0.23.1280.727@0.23.1280.727" timestamp="1595414286365" />
+    <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595376543573">
+      <screen x="0" y="23" width="1280" height="724" />
+    </state>
+    <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.716@0.23.1280.716" timestamp="1595193014698" />
+    <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.723@0.23.1280.723" timestamp="1595247001387" />
+    <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.724@0.23.1280.724" timestamp="1595376543573" />
+    <state x="296" y="68" width="670" height="676" key="search.everywhere.popup" timestamp="1595265618984">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="296" y="68" width="670" height="676" key="search.everywhere.popup/0.23.1280.721@0.23.1280.721" timestamp="1595265618984" />
+  </component>
+</project>
