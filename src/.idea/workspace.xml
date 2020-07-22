@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7d4998b-a1db-4afd-82d6-a94ab40b7a8b" name="Default Changelist" comment="" />
+    <list default="true" id="d7d4998b-a1db-4afd-82d6-a94ab40b7a8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facial_landmarks_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/facial_landmarks_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaze_estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaze_estimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/head_pose_estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/head_pose_estimation.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -311,12 +319,13 @@
     <state x="140" y="23" width="982" height="721" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1595173607592" />
     <state x="140" y="23" width="982" height="723" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1595240474517" />
     <state x="140" y="23" key="SettingsEditor/0.23.1280.727@0.23.1280.727" timestamp="1595414286365" />
-    <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595376543573">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595429342812">
+      <screen x="0" y="23" width="1280" height="728" />
     </state>
     <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.716@0.23.1280.716" timestamp="1595193014698" />
     <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.723@0.23.1280.723" timestamp="1595247001387" />
     <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.724@0.23.1280.724" timestamp="1595376543573" />
+    <state x="254" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.728@0.23.1280.728" timestamp="1595429342812" />
     <state x="296" y="68" width="670" height="676" key="search.everywhere.popup" timestamp="1595265618984">
       <screen x="0" y="23" width="1280" height="721" />
     </state>

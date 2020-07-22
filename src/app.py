@@ -39,13 +39,12 @@ def get_argument_parser():
     parser.add_argument("-pt", "--threshold", type=float, default=0.5,
                         help="Probability threshold for face detection"
                              "(0.5 by default)")
-    parser.add_argument("-c", "--toggle",  default=[],
+    parser.add_argument("-c", "--toggle", default=[],
                         help="Customize what should be displayed on the screen. [stats,frame]")
     return parser
 
 
 def run_app(args):
-    print("Run App0")
     face_detection_model = Model_Face_Detection(args.model_path_fd, args.device, args.cpu_extension,
                                                 threshold=args.threshold)
     face_detection_model.load_model()
@@ -58,7 +57,6 @@ def run_app(args):
 
     input_feeder = InputFeeder(args.input_type, args.input_file, )
     input_feeder.load_data()
-    print("Main Run App")
     mouse_controller = MouseController("medium", "fast")
     # while input_feeder.cap.isOpened():
     # feed_out=input_feeder.next_batch()
@@ -74,15 +72,17 @@ def run_app(args):
         frame_count += 1
         face_out, cords = face_detection_model.predict(frame.copy())
 
-        # crop_wtxt
+        # When no face was detected
         if cords == 0:
             inf_info = "No Face Detected in the Frame"
-            crop_wtxt = show_img(frame, inf_info, 400)
+            write_text_img(frame, inf_info, 400)
             continue
 
         eyes_cords, left_eye, right_eye = face_landmark_model.predict(face_out.copy())
         head_pose_out = head_pose_model.predict(face_out.copy())
         gaze_out = gaze_model.predict(left_eye, right_eye, head_pose_out)
+
+        # Faliure in processing both eyes
         if gaze_out is None:
             continue
         x, y = gaze_out
@@ -91,17 +91,15 @@ def run_app(args):
         inf_info = "Head Pose (y: {:.2f}, p: {:.2f}, r: {:.2f})".format(head_pose_out[0],
                                                                         head_pose_out[1],
                                                                         head_pose_out[2])
+        # Process Visualization
         if 'frame' in custom:
-            print("Framing")
             visualization(frame, cords, face_out, eyes_cords)
 
-            # cv2.imshow('frame', face_out, width=1210)
-        # visualization(frame, cords, face_out, eyes_cords)
         if 'stats' in custom:
             print("Statistics")
-            show_img(face_out, inf_info, 400)
+            write_text_img(face_out, inf_info, 400)
             inf_info = "Gaze Angle: x: {:.2f}, y: {:.2f}".format(x, y)
-            crop_wtxt = show_img(face_out, inf_info, 400, 15)
+            write_text_img(face_out, inf_info, 400, 15)
 
         out_f = np.hstack((cv2.resize(frame, (400, 400)), cv2.resize(face_out, (400, 400))))
         cv2.imshow('Visualization', out_f)
@@ -111,14 +109,13 @@ def run_app(args):
     cv2.destroyAllWindows()
 
 
-def show_img(image, text, frame_size, position=None):
+def write_text_img(image, text, frame_size, position=None):
     y = 15
     if position is not None:
         y += position
     cv2.putText(image, text, (15, y),
                 cv2.FONT_HERSHEY_COMPLEX, 0.4, (200, 10, 10), 1)
     return imutils.resize(image, height=frame_size, width=frame_size)
-    # cv2.imshow('Visualization', out_f)
 
 
 def visualization(frame, face_cords, image, eyes_coords):

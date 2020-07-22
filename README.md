@@ -42,13 +42,11 @@ This project uses gaze detection model to control the mouse pointer of your comp
     
 
 ## Demo
-*TODO:* Explain how to run a basic demo of your model.
 After successfully completing the setup and installation precedures. you are now good to run a demo. From the folder src in the root directory of the project, run the blow command.
     
     python3 src/app.py -fd ../intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001 -fl ../intel/landmarks-regression-retail-0009/FP16/landmarks-regression-retail-0009 -hp ../intel/head-pose-estimation-adas-0001/FP16/head-pose-estimation-adas-0001 -ge ../intel/gaze-estimation-adas-0002/FP16/gaze-estimation-adas-0002 -i video -f bin/demo.mp4 -pt 0.5 -d CPU -v gaze,stats
 
 ## Documentation
-*TODO:* Include any documentation that users might need to better understand your project code. For instance, this is a good place to explain the command line arguments that your project supports.
 
 Command Line Arguments:
 
@@ -56,10 +54,9 @@ Command Line Arguments:
 
 
 ## Benchmarks
-*TODO:* Include the benchmark results of running your model on multiple hardware and multiple model precisions. Your benchmarks can include: model loading time, input/output processing time, model inference time etc.
 
 Using the OpenVINO Deep Learning Workbench, the models were benchmarked and the following outputs were observed.
-The benchmark was performed on an Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+The benchmark was performed on an Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz using an auto generated dataset
 
 Face Detection FP32:
 
@@ -103,17 +100,17 @@ Facial Landmark FP16-INT8:
     
 ## Results
 *TODO:* Discuss the benchmark results and explain why you are getting the results you are getting. For instance, explain why there is difference in inference time for FP32, FP16 and INT8 models.
+It was observed that models with higher precisions are larger and takes more time to load. The inferences are more accurate than lower precision models. From the benchmark output, it was observed that lower precision model were faster in performing inference than higher precision models, but the are less accurate as compared to higher precision models. 
+With a combination of these models, taking note of what trade-off to make between accuracy and speed for the use case will give a better result.
+
 
 ## Stand Out Suggestions
 This is where you can provide information about the stand out suggestions that you have attempted.
 
 ### Async Inference
-If you have used Async Inference in your code, benchmark the results and explain its effects on power and performance of your project.
 When I used async inference, the inference was observed to perform better. This is because it tries to utilize the cpu for multithreading.
 
 ### Edge Cases
-There will be certain situations that will break your inference flow. For instance, lighting changes or multiple people in the frame. Explain some of the edge cases you encountered in your project and how you solved them to make your project more robust.
-Some of the edge cases I encountered are:
 
 1. When the model detected more than 1 faces.
 2. The app was observed to have poor performance when there is less light. Which makes it difficult for the model to accurately detect gaze.

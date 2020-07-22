@@ -15,7 +15,7 @@ class Model_Head_Pose_Estimation:
 
     def __init__(self, model_name, device='CPU', extensions=None, threshold=0.5):
         '''
-        TODO: Use this to set your instance variables.
+        Setting Instance variables.
         '''
         self.model_name = model_name
         self.device = device
@@ -30,7 +30,6 @@ class Model_Head_Pose_Estimation:
 
     def load_model(self):
         '''
-        TODO: You will need to complete this method.
         This method is for loading the model to the device specified by the user.
         If your model requires any Plugins, this is where you can load them.
         '''
@@ -50,7 +49,6 @@ class Model_Head_Pose_Estimation:
 
     def predict(self, image):
         '''
-        TODO: You will need to complete this method.
         This method is meant for running predictions on the input image.
         '''
         print("HP In Predict")

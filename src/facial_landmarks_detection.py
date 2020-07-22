@@ -10,12 +10,12 @@ from openvino.inference_engine import IENetwork, IECore
 
 class Model_Facial_Landmarks:
     '''
-    Class for the Face Detection Model.
+    Class for the Face Landmarks Model.
     '''
 
     def __init__(self, model_name, device='CPU', extensions=None, threshold=0.5):
         '''
-        TODO: Use this to set your instance variables.
+        Setting Instance variables.
         '''
         self.model_name = model_name
         self.device = device
@@ -46,7 +46,6 @@ class Model_Facial_Landmarks:
 
     def predict(self, image):
         '''
-        TODO: You will need to complete this method.
         This method is meant for running predictions on the input image.
         '''
         print("FL In Predict")
@@ -55,12 +54,6 @@ class Model_Facial_Landmarks:
         if self.wait() == 0:
             inference_result = self.get_output_result()
             eyes_coordinates = self.preprocess_output(inference_result[0], image)
-            # cv2.rectangle(image, (eyes_coordinates[0][0], eyes_coordinates[0][2]),
-            #               (eyes_coordinates[0][1], eyes_coordinates[0][3]),
-            #               color=(256, 256, 0), thickness=1)
-            # cv2.rectangle(image, (eyes_coordinates[1][0], eyes_coordinates[1][2]),
-            #               (eyes_coordinates[1][1], eyes_coordinates[1][3]),
-            #               color=(256, 256, 0), thickness=1)
             left_eye = image[eyes_coordinates[0][2]:eyes_coordinates[0][3],
                        eyes_coordinates[0][0]:eyes_coordinates[0][1]]
             right_eye = image[eyes_coordinates[1][2]:eyes_coordinates[1][3],
@@ -104,23 +97,6 @@ class Model_Facial_Landmarks:
                  left_eye_y_coordinate + 15], [right_eye_x_coordinate - 15, right_eye_x_coordinate + 15,
                                                right_eye_y_coordinate - 15, right_eye_y_coordinate + 15]]
 
-        # left1_x = landmark[24]  # 0
-        # left1_y = landmark[25]
-        # left2_x = landmark[28]  # 1
-        # left2_y = landmark[29]
-        # right1_x = landmark[30]  # 2
-        # right1_y = landmark[31]
-        # right2_x = landmark[34]  # 3
-        # right2_y = landmark[35]
-        # left_eye_brow_x = landmark[26]
-        # left_eye_brow_y = landmark[27]
-        # right_eye_brow_y = landmark[32]
-        # right_eye_brow_y = landmark[33]
-        # height, width = (image.shape[0], image.shape[1])
-        # return [[int(width * left1_x), int(width * left2_x), int(left_eye_brow_y * height),
-        #          int(height * (left_eye_brow_y + (left2_x - left1_x)))], [
-        #             int(width * right1_x), int(width * right2_x), int(right_eye_brow_y * height),
-        #             int(height * (right_eye_brow_y + (right2_x - right1_x)))]]
 
     def wait(self):
         inf_status = self.exec_network.requests[0].wait(-1)

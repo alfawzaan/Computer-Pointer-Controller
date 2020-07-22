@@ -16,7 +16,7 @@ class Model_Face_Detection:
 
     def __init__(self, model_name, device='CPU', extensions=None, threshold=0.5):
         '''
-        TODO: Use this to set your instance variables.
+        Setting Instance variables.
         '''
         self.model_name = model_name
         self.device = device
@@ -47,10 +47,8 @@ class Model_Face_Detection:
 
     def predict(self, image):
         '''
-        TODO: You will need to complete this method.
         This method is meant for running predictions on the input image.
         '''
-        print("FD In Predict")
         pre_pro_img = self.preprocess_input(image)
         self.exec_network.start_async(request_id=0, inputs={self.input_blob: pre_pro_img})
         if self.wait() == 0:
@@ -59,8 +57,6 @@ class Model_Face_Detection:
             for boxes in inference_result[0][0]:
                 if boxes[2] > self.threshold:
                     output_cords = self.preprocess_output(boxes, image)
-                    # cv2.rectangle(image, (output_cords[0], output_cords[1]), (output_cords[2], output_cords[3]),
-                    #               color=(256, 256, 256), thickness=1)
                     cords.append(output_cords)
             print(type(cords))
             if len(cords) == 0:
