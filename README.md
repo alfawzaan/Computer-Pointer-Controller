@@ -1,10 +1,8 @@
 # Computer Pointer Controller
 
-*TODO:* Write a short introduction to your project
 This project uses gaze detection model to control the mouse pointer of your computer. The inference is done using the Intel openVINO toolkits.
 
 ## Project Set Up and Installation
-*TODO:* Explain the setup procedures to run your project. For instance, this can include your project directory structure, the models you need to download and where to place them etc. Also include details about how to install the dependencies your project requires.
 
 1. Install the intel openVINO toolkit using this link as a guide
 
@@ -99,12 +97,13 @@ Facial Landmark FP16-INT8:
    <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/facial_landmarkFP16I8.png" />
     
 ## Results
-*TODO:* Discuss the benchmark results and explain why you are getting the results you are getting. For instance, explain why there is difference in inference time for FP32, FP16 and INT8 models.
+
 It was observed that models with higher precisions are larger and takes more time to load. The inferences are more accurate than lower precision models. From the benchmark output, it was observed that lower precision model were faster in performing inference than higher precision models, but the are less accurate as compared to higher precision models. 
 With a combination of these models, taking note of what trade-off to make between accuracy and speed for the use case will give a better result.
 
 
 ## Stand Out Suggestions
+
 This is where you can provide information about the stand out suggestions that you have attempted.
 
 ### Async Inference
