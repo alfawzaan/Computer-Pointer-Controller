@@ -63,44 +63,43 @@ The benchmark was performed on an Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
 
 Face Detection FP32:
 
-   ![]("imgs/face_detectionFP32.png")
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/face_detectionFP32.png" />
 
 Gaze Estimation FP32:
 
-   ![]("/imgs/gaze_estimationFP32.png")
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/gaze_estimationFP32.png" />
     
 Gaze Estimation FP16:
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/gaze_estimationFP16.png" />
 
-   ![]("/imgs/gaze_estimationFP16.png")
     
 Gaze Estimation FP16-INT8:
 
-   ![]("/imgs/gaze_estimationFP16I8.png")
-
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/gaze_estimationFP16I8.png" />
 
 Head Pose FP32:
 
-   ![]("/imgs/head_poseFP32.png")
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/head_poseFP32.png" />
 
 Head Pose FP16:
 
-   ![]("/imgs/head_poseFP16.png")
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/head_poseFP16.png" />
 
 Head Pose FP16-INT8:
 
-   ![]("/imgs/head_poseFP16I8.png")
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/head_poseFP16I8.png" />
     
 Facial Landmark FP32:
 
-   ![]("/imgs/facial_landmarkFP32.png")
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/facial_landmarkFP32.png" />
     
 Facial Landmark FP16:
 
-   ![]("/imgs/facial_landmarkFP16.png")
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/facial_landmarkFP16.png" />
 
 Facial Landmark FP16-INT8:
 
-   ![]("/imgs/facial_landmarkFP16I8.png")
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/facial_landmarkFP16I8.png" />
     
 ## Results
 *TODO:* Discuss the benchmark results and explain why you are getting the results you are getting. For instance, explain why there is difference in inference time for FP32, FP16 and INT8 models.
