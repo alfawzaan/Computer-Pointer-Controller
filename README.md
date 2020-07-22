@@ -40,7 +40,7 @@ Inferences are performed through four models. The final output then can be used 
     
 Project Structure
         
-        <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/project_structure.png" />    
+   <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/project_structure.png" />    
 ## Demo
 After successfully completing the setup and installation precedures. you are now good to run a demo. From the folder src in the root directory of the project, run the blow command.
     
