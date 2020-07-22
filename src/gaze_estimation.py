@@ -87,6 +87,7 @@ class Model_Gaze_Estimation:
             pre_pro_frame = pre_pro_frame.transpose((2, 0, 1))
             pre_pro_frame = pre_pro_frame.reshape(1, *pre_pro_frame.shape)
         except:
+            log.error("An error occured while trying to process both eyes")
             from app import write_text_img
             write_text_img([0], "Failed to process both eyes successfully", 400)
             return 0

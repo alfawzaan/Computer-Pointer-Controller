@@ -1,3 +1,4 @@
+import math
 from argparse import ArgumentParser
 
 import imutils as imutils
@@ -40,7 +41,7 @@ def get_argument_parser():
                         help="Probability threshold for face detection"
                              "(0.5 by default)")
     parser.add_argument("-c", "--toggle", default=[],
-                        help="Customize what should be displayed on the screen. [stats,frame]")
+                        help="Customize what should be displayed on the screen. [stats,frame,gaze]")
     return parser
 
 
@@ -100,6 +101,8 @@ def run_app(args):
             write_text_img(face_out, inf_info, 400)
             inf_info = "Gaze Angle: x: {:.2f}, y: {:.2f}".format(x, y)
             write_text_img(face_out, inf_info, 400, 15)
+        if 'gaze' in custom:
+            display_hp(frame, head_pose_out, cords)
 
         out_f = np.hstack((cv2.resize(frame, (400, 400)), cv2.resize(face_out, (400, 400))))
         cv2.imshow('Visualization', out_f)
@@ -129,6 +132,64 @@ def visualization(frame, face_cords, image, eyes_coords):
                   (eyes_coords[1][1], eyes_coords[1][3]),
                   color=(256, 256, 0), thickness=1)
 
+def display_hp(frame, head_pose_info, face_coords):
+    for face_cord in face_coords:
+        y = head_pose_info[0]
+        p = head_pose_info[1]
+        r = head_pose_info[2]
+
+        x_max = face_cord[2]
+        x_min = face_cord[0]
+        y_max = face_cord[3]
+        y_min = face_cord[1]
+
+        bbox_width = abs(x_max - x_min)
+        bbox_height = abs(y_max - y_min)
+
+        x_min -= 50
+        x_max += 50
+        y_min -= 50
+        y_max += 30
+        x_min = max(x_min, 0)
+        y_min = max(y_min, 0)
+        x_max = min(frame.shape[1], x_max)
+        y_max = min(frame.shape[0], y_max)
+
+        draw_axis(frame, y, p, r, tdx=(x_min + x_max) / 2, tdy=(y_min + y_max) / 2,
+                  size=bbox_height / 2)
+
+def draw_axis(img, yaw, pitch, roll, tdx=None, tdy=None, size = 100):
+
+    pitch = pitch * np.pi / 180
+    yaw = -(yaw * np.pi / 180)
+    roll = roll * np.pi / 180
+
+    if tdx is not None and tdy is not None:
+        tdx = tdx
+        tdy = tdy
+    else:
+        height, width = img.shape[:2]
+        tdx = width / 2
+        tdy = height / 2
+
+    # X-Axis pointing to right. drawn in red
+    x1 = size * (math.cos(yaw) * math.cos(roll)) + tdx
+    y1 = size * (math.cos(pitch) * math.sin(roll) + math.cos(roll) * math.sin(pitch) * math.sin(yaw)) + tdy
+
+    # Y-Axis | drawn in green
+    #        v
+    x2 = size * (-math.cos(yaw) * math.sin(roll)) + tdx
+    y2 = size * (math.cos(pitch) * math.cos(roll) - math.sin(pitch) * math.sin(yaw) * math.sin(roll)) + tdy
+
+    # Z-Axis (out of the screen) drawn in blue
+    x3 = size * (math.sin(yaw)) + tdx
+    y3 = size * (-math.cos(yaw) * math.sin(pitch)) + tdy
+
+    cv2.line(img, (int(tdx), int(tdy)), (int(x1),int(y1)),(0,0,255),3)
+    cv2.line(img, (int(tdx), int(tdy)), (int(x2),int(y2)),(0,255,0),3)
+    cv2.line(img, (int(tdx), int(tdy)), (int(x3),int(y3)),(255,0,0),2)
+
+    return img
 
 def main():
     print("Main Run App")

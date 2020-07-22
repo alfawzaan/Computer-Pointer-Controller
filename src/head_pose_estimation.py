@@ -33,7 +33,6 @@ class Model_Head_Pose_Estimation:
         This method is for loading the model to the device specified by the user.
         If your model requires any Plugins, this is where you can load them.
         '''
-        print("HP In Load")
         model_structure = self.model_name + ".xml"
         model_weight = self.model_name + ".bin"
         self.network = IENetwork(model=model_structure, weights=model_weight)
@@ -51,12 +50,10 @@ class Model_Head_Pose_Estimation:
         '''
         This method is meant for running predictions on the input image.
         '''
-        print("HP In Predict")
         pre_pro_img = self.preprocess_input(image)
         inference_result=self.exec_network.infer(inputs={self.input_blob: pre_pro_img})
         # if self.wait() == 0:
         # inference_result = self.get_output_result()
-        print("Infer Type:")
         type(inference_result)
         head_pose = self.preprocess_output(inference_result)
         return head_pose

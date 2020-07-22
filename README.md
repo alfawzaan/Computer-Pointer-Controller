@@ -1,7 +1,7 @@
 # Computer Pointer Controller
 
-This project uses gaze detection model to control the mouse pointer of your computer. The inference is done using the Intel openVINO toolkits.
-
+This project uses gaze detection model to control the mouse pointer of your computer. The inference is done using the Intel OpenVINO toolkits.
+Inferences are performed through four models. The final output then can be used to control the mouse.
 ## Project Set Up and Installation
 
 1. Install the intel openVINO toolkit using this link as a guide
@@ -42,7 +42,7 @@ This project uses gaze detection model to control the mouse pointer of your comp
 ## Demo
 After successfully completing the setup and installation precedures. you are now good to run a demo. From the folder src in the root directory of the project, run the blow command.
     
-    python3 src/app.py -fd ../intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001 -fl ../intel/landmarks-regression-retail-0009/FP16/landmarks-regression-retail-0009 -hp ../intel/head-pose-estimation-adas-0001/FP16/head-pose-estimation-adas-0001 -ge ../intel/gaze-estimation-adas-0002/FP16/gaze-estimation-adas-0002 -i video -f bin/demo.mp4 -pt 0.5 -d CPU -v gaze,stats
+    python3 src/app.py -fd ../intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001 -fl ../intel/landmarks-regression-retail-0009/FP16/landmarks-regression-retail-0009 -hp ../intel/head-pose-estimation-adas-0001/FP16/head-pose-estimation-adas-0001 -ge ../intel/gaze-estimation-adas-0002/FP16/gaze-estimation-adas-0002 -i video -f ../bin/demo.mp4 -pt 0.5 -d CPU -c frame,stats,gaze
 
 ## Documentation
 

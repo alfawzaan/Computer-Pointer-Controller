@@ -29,7 +29,6 @@ class Model_Facial_Landmarks:
         self.input_shape = None
 
     def load_model(self):
-        print("FL In Load")
         model_structure = self.model_name + ".xml"
         model_weight = self.model_name + ".bin"
         self.network = IENetwork(model=model_structure, weights=model_weight)
@@ -48,7 +47,6 @@ class Model_Facial_Landmarks:
         '''
         This method is meant for running predictions on the input image.
         '''
-        print("FL In Predict")
         pre_pro_img = self.preprocess_input(image)
         self.exec_network.start_async(request_id=0, inputs={self.input_blob: pre_pro_img})
         if self.wait() == 0:
