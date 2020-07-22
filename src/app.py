@@ -97,12 +97,12 @@ def run_app(args):
             visualization(frame, cords, face_out, eyes_cords)
 
         if 'stats' in custom:
-            print("Statistics")
             write_text_img(face_out, inf_info, 400)
             inf_info = "Gaze Angle: x: {:.2f}, y: {:.2f}".format(x, y)
+            log.info("Statistic "+inf_info)
             write_text_img(face_out, inf_info, 400, 15)
         if 'gaze' in custom:
-            display_hp(frame, head_pose_out, cords)
+            display_head_pose(frame, head_pose_out, cords)
 
         out_f = np.hstack((cv2.resize(frame, (400, 400)), cv2.resize(face_out, (400, 400))))
         cv2.imshow('Visualization', out_f)
@@ -133,7 +133,7 @@ def visualization(frame, face_cords, image, eyes_coords):
                   (eyes_coords[1][1], eyes_coords[1][3]),
                   color=(256, 256, 0), thickness=1)
 
-def display_hp(frame, head_pose_info, face_coords):
+def display_head_pose(frame, head_pose_info, face_coords):
     for face_cord in face_coords:
         y = head_pose_info[0]
         p = head_pose_info[1]
@@ -144,7 +144,6 @@ def display_hp(frame, head_pose_info, face_coords):
         y_max = face_cord[3]
         y_min = face_cord[1]
 
-        bbox_width = abs(x_max - x_min)
         bbox_height = abs(y_max - y_min)
 
         x_min -= 50
@@ -159,6 +158,7 @@ def display_hp(frame, head_pose_info, face_coords):
         draw_axis(frame, y, p, r, tdx=(x_min + x_max) / 2, tdy=(y_min + y_max) / 2,
                   size=bbox_height / 2)
 
+# Reference: https://github.com/natanielruiz/deep-head-pose
 def draw_axis(img, yaw, pitch, roll, tdx=None, tdy=None, size = 100):
 
     pitch = pitch * np.pi / 180
