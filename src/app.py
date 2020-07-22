@@ -1,7 +1,7 @@
 import math
 from argparse import ArgumentParser
 
-import imutils as imutils
+# import imutils as imutils
 
 from face_detection import Model_Face_Detection
 from facial_landmarks_detection import Model_Facial_Landmarks
@@ -118,7 +118,8 @@ def write_text_img(image, text, frame_size, position=None):
         y += position
     cv2.putText(image, text, (15, y),
                 cv2.FONT_HERSHEY_COMPLEX, 0.4, (200, 10, 10), 1)
-    return imutils.resize(image, height=frame_size, width=frame_size)
+    return cv2.resize(image, (frame_size, frame_size))
+    # return imutils.resize(image, height=frame_size, width=frame_size)
 
 
 def visualization(frame, face_cords, image, eyes_coords):
