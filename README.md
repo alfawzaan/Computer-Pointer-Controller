@@ -52,7 +52,7 @@ After successfully completing the setup and installation precedures. you are now
 
 Command Line Arguments:
 
-   ![]("/img/command_args.png")
+   ![]("https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/command_args.png)
 
 
 ## Benchmarks
