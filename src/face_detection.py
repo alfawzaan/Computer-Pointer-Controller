@@ -6,7 +6,7 @@ from os import path
 import sys
 import logging as log
 from openvino.inference_engine import IENetwork, IECore
-import cv2
+import cv2 as cv
 
 
 class Model_Face_Detection:
@@ -81,7 +81,7 @@ class Model_Face_Detection:
         you might have to preprocess it. This function is where you can do that.
         '''
         n, c, h, w = self.input_shape
-        pre_pro_frame = cv2.resize(image, (w, h))
+        pre_pro_frame =cv.resize(image, (w, h))
         pre_pro_frame = pre_pro_frame.transpose((2, 0, 1))
         pre_pro_frame = pre_pro_frame.reshape((n, c, h, w))
         return pre_pro_frame

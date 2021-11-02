@@ -10,7 +10,7 @@ Inferences are performed through four models. The final output then can be used 
 
 2. Clone or download the repository into your local machine.
 
-3. Navigate to the folder src in the project's root directory
+3. Navigate to project's root directory
 
 4. Create and activate a virtual environment using these commands
    on  Mac OS / Linux
@@ -22,6 +22,7 @@ Inferences are performed through four models. The final output then can be used 
   
         virtualenv venv --python py37
         venv\Scripts\activate
+   ##At the time of this documentation, OpenVINO does not support Python 3.8 and Above 
 
 5. Execute the script 'run_demo.sh' to run a demo
 
@@ -42,9 +43,9 @@ Project Structure
         
    <img src="https://github.com/alfawzaan/Computer-Pointer-Controller/blob/master/img/project_structure.png" />    
 ## Demo
-After successfully completing the setup and installation precedures. you are now good to run a demo. From the folder src in the root directory of the project, run the blow command.
+After successfully completing the setup and installation precedures. you are now good to run a demo. From the folder src in the src folder in the root directory of the project, run the blow command.
     
-    python3 src/app.py -fd ../intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001 -fl ../intel/landmarks-regression-retail-0009/FP16/landmarks-regression-retail-0009 -hp ../intel/head-pose-estimation-adas-0001/FP16/head-pose-estimation-adas-0001 -ge ../intel/gaze-estimation-adas-0002/FP16/gaze-estimation-adas-0002 -i video -f ../bin/demo.mp4 -pt 0.5 -d CPU -c frame,stats,gaze
+    python3 app.py -fd ../intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001 -fl ../intel/landmarks-regression-retail-0009/FP16/landmarks-regression-retail-0009 -hp ../intel/head-pose-estimation-adas-0001/FP16/head-pose-estimation-adas-0001 -ge ../intel/gaze-estimation-adas-0002/FP16/gaze-estimation-adas-0002 -i video -f ../bin/demo.mp4 -pt 0.5 -d CPU -c frame,stats,gaze
 
 ## Documentation
 

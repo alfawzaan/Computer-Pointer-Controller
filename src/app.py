@@ -99,7 +99,7 @@ def run_app(args):
         if 'stats' in custom:
             write_text_img(face_out, inf_info, 400)
             inf_info = "Gaze Angle: x: {:.2f}, y: {:.2f}".format(x, y)
-            log.info("Statistic "+inf_info)
+            # log.info("Statistic "+inf_info)
             write_text_img(face_out, inf_info, 400, 15)
         if 'gaze' in custom:
             display_head_pose(frame, head_pose_out, cords)
