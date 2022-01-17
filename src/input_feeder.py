@@ -29,6 +29,7 @@ class InputFeeder:
             self.cap = cv2.VideoCapture(0)
         else:
             self.cap = cv2.imread(self.input_file)
+        return self.cap
 
     def next_batch(self):
         '''
@@ -36,7 +37,7 @@ class InputFeeder:
         If input_type is 'image', then it returns the same image.
         '''
         while True:
-            for _ in range(10):
+            for _ in range(1):
                 _,frame = self.cap.read()
             yield frame
 

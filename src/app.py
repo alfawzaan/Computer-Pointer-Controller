@@ -57,7 +57,7 @@ def run_app(args):
     gaze_model.load_model()
 
     input_feeder = InputFeeder(args.input_type, args.input_file, )
-    input_feeder.load_data()
+    cap = input_feeder.load_data()
     mouse_controller = MouseController("medium", "fast")
     # while input_feeder.cap.isOpened():
     # feed_out=input_feeder.next_batch()
@@ -65,11 +65,13 @@ def run_app(args):
     frame_count = 0
     custom = args.toggle
 
-    for frame in input_feeder.next_batch():
+    # for frame in input_feeder.next_batch():
+    while True:
+        _, frame = cap.read()
+        key_pressed = cv2.waitKey(60)
 
         if frame is None:
             break
-        key_pressed = cv2.waitKey(60)
         frame_count += 1
         face_out, cords = face_detection_model.predict(frame.copy())
 
